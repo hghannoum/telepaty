@@ -53,7 +53,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-              "hosts": [('redis://red-ck845c08elhc73do0tb0', 6379)],
+              "hosts": [('rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com', 6379)],
         },
     },
 }
