@@ -53,7 +53,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-              "hosts": [('telepaty.onrender.com', 6379)],
+              "hosts": [('redis://red-ck845c08elhc73do0tb0', 6379)],
         },
     },
 }
