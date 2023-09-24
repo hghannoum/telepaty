@@ -12,3 +12,6 @@ tzdata
 gunicorn
 whitenoise
 django-cors-headers 
+channels==2.4.0
+Channels-Redis
+Redis
