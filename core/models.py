@@ -13,9 +13,10 @@ class Contact(
 	
 	):
 
-      
-	lamp = models.BooleanField(verbose_name= True)
-	temp= models.IntegerField(verbose_name= 0)
-	currentTemp= models.IntegerField(verbose_name= 0)
+        class Meta:
+         app_label = 'core'
+        lamp = models.BooleanField(verbose_name= True)
+        temp= models.IntegerField(verbose_name= 0)
+        currentTemp= models.IntegerField(verbose_name= 0)
 
 

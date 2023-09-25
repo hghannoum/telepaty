@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/asgi/
 
 
 
-application = get_asgi_application()
 import os
 
 from django.core.asgi import get_asgi_application
