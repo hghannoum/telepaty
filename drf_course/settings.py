@@ -2,6 +2,7 @@ import os
 import django
 from pathlib import Path
 from dotenv import load_dotenv
+from urllib.parse import urlparse
 # Load environment variables from .env file
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "drf_course.settings.py")
 load_dotenv()
@@ -37,7 +38,7 @@ CHANNEL_LAYERS = {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
             "hosts": [('rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com', 6379)],
-            "ssl":true,
+            "ssl":True,
             "ssl_cert_reqs":None,
             "username":urlparse(os.environ.get("rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com")).username,
             "password":urlparse(os.environ.get("rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com")).password,
