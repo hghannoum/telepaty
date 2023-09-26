@@ -12,7 +12,7 @@ tzdata
 gunicorn
 whitenoise
 django-cors-headers 
-channels==2.4.0
+channels==3.0.1
 Channels-Redis
 Redis
 daphne
