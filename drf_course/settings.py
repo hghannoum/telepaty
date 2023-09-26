@@ -55,7 +55,7 @@ def parse_redis_url(url):
 
     return host, port, user, password, db
 
-REDIS_URL = env('rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com:6379', default='redis://localhost:6379')
+REDIS_URL = 'rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com:6379'
 REDIS_HOST, REDIS_PORT, REDIS_USER, REDIS_PASSWORD, REDIS_DB = parse_redis_url(REDIS_URL)
 # DJANGO CHANNELS
 CHANNEL_LAYERS = {
