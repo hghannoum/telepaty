@@ -35,12 +35,14 @@ INSTALLED_APPS = [
 
 CHANNEL_LAYERS = {
     'default': {
-        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-        'CONFIG': {
-            "hosts": [('redis://Halima:lilyhalime3@12.12.13.12:6379/telepatyyy')],
-        },
-    },
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com:6379/0',  # Replace with your Redis URL
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        }
+    }
 }
+
 
 ASGI_APPLICATION = 'drf_course.routing.application'
 
