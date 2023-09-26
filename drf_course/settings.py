@@ -37,9 +37,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com', 6379)],
-            "username":urlparse(os.environ.get("rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com")).username,
-            "password":urlparse(os.environ.get("rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com")).password,
+            "hosts": [('rediss://red-ck845c08elhc73do0tb0:KNbKJkYsQeQUbUaeg1QTqtxZ6CJw410A@oregon-redis.render.com', 6379)],=
         },
     },
 }
